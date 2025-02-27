@@ -25,17 +25,17 @@ Also used multiple animation properties
 * Create
 
 ## Some screenshots from the animation
-<img src="./images/one.png" width="280">
-<img src="./images/two.png" width="280">
-<img src="./images/three.png" width="280">
-<img src="./images/four.png" width="280">
+<img src="./images/one.png" width="400">
+<img src="./images/two.png" width="400">
+<img src="./images/three.png" width="400">
+<img src="./images/four.png" width="400">
 
 ## Watch the Animation Video !!!
 <a href="https://youtu.be/MWJLzZ-WxB8" target="_blank">
     link to the video
 </a>
 
-## installing python and manim for windows
+## Installing python and manim for windows
 
 open the windows powershell and perform the following steps
 
