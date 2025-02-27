@@ -25,10 +25,10 @@ Also used multiple animation properties
 * Create
 
 ## Some screenshots from the animation
-<img src="./images/one.png" width="400">
-<img src="./images/two.png" width="400">
-<img src="./images/three.png" width="400">
-<img src="./images/four.png" width="400">
+<img src="./images/one.png" width="800">
+<img src="./images/two.png" width="800">
+<img src="./images/three.png" width="800">
+<img src="./images/four.png" width="800">
 
 ## Watch the Animation Video !!!
 <a href="https://youtu.be/MWJLzZ-WxB8" target="_blank">
