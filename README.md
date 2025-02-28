@@ -1,8 +1,8 @@
 # Animating Finite Automatas using python
 
-## A python script written using the manim library to animates an example of NFA and DFA problem
+## A python script written using the manim library to animate an example of NFA and DFA problem
 
-In this script, I have animated state diagrams, transition tables and transitions for two basic Theory of Computation Concepts
+In this script, I have animated state diagrams, transition tables and transition functions for two basic Theory of Computation Concepts
 
 * NFA - language that either starts with "0" or "11"
 * DFA - language  where "b" is immediately followed by "a"
@@ -45,4 +45,4 @@ open the windows powershell and perform the following steps
 4. Go into the directory - `cd manimations`
 5. Add manim as dependency - `uv add manim`
 6. Move to the manimations directory - `cd manimations`
-6. Checking the manim installation - `uv run manim checkhealth`
+7. Checking the manim installation - `uv run manim checkhealth`
