@@ -68,8 +68,8 @@ class Question_one(Scene):
         question_one_diagram = Text("Transition Diagram", font_size=30).move_to(UP*2 + LEFT*3.5)
         question_one_table = Text("Transition Table", font_size=30).move_to(UP*2 + RIGHT*3.5)
         table.move_to(RIGHT*3.5 + DOWN*0.5)
-        question_one_function = Text("Transition Functions", font_size=30).move_to(UP*2 + RIGHT*3.5)
 
+        question_one_function = Text("Transition Functions", font_size=30).move_to(UP*2 + RIGHT*3.5)
         question_one_equations = [
             Text("δ(q0, 0) = q2", font_size=30).move_to(UP*1 + RIGHT * 3.5),
             Text("δ(q0, 1) = q1", font_size=30).move_to(UP*0.3 + RIGHT * 3.5),
@@ -78,10 +78,34 @@ class Question_one(Scene):
             Text("δ(q2, 0) = q2", font_size=30).move_to(DOWN*1.8 + RIGHT * 3.5),
             Text("δ(q2, 1) = q2", font_size=30).move_to(DOWN*2.5 + RIGHT * 3.5)
         ]
-
         question_one_objects = VGroup(*[line.scale(0.7) for line in question_one_equations])
         for text in question_one_objects:
             text.set_opacity(0) 
+        question_one_final_objects = VGroup(question_one_objects, question_one_function)
+
+        question_one_example_one = Text("Trial String: 110101", font_size=30).move_to(UP*2 + RIGHT*3.5)
+        question_one_example_one_eqns = [
+            Text("δ(q0, 1) = q1", font_size=30).move_to(UP*1 + RIGHT * 3.5),
+            Text("δ(q1, 1) = q2", font_size=30).move_to(UP*0.3 + RIGHT * 3.5),
+            Text("δ(q2, 0) = q2", font_size=30).move_to(DOWN*0.4 + RIGHT * 3.5),
+            Text("δ(q2, 1) = q2", font_size=30).move_to(DOWN*1.1 + RIGHT * 3.5),
+            Text("δ(q2, 0) = q2", font_size=30).move_to(DOWN*1.8 + RIGHT * 3.5),
+            Text("δ(q2, 1) = q2", font_size=30).move_to(DOWN*2.5 + RIGHT * 3.5)
+        ]
+        question_one_example_one_objects = VGroup(*[line.scale(0.7) for line in question_one_example_one_eqns])
+        for text in question_one_example_one_objects:
+            text.set_opacity(0) 
+        question_one_example_one_final = Text("Accepted", font_size=30, color=GREEN).move_to(DOWN*3 + RIGHT*3.5)
+
+        question_one_example_two = Text("Trial String: 10", font_size=30).move_to(UP*2 + RIGHT*3.5)
+        question_one_example_two_eqns = [
+            Text("δ(q0, 1) = q1", font_size=30).move_to(UP*1 + RIGHT * 3.5),
+            Text("δ(q1, 0) = Φ", font_size=30).move_to(UP*0.3 + RIGHT * 3.5),
+        ]
+        question_one_example_two_objects = VGroup(*[line.scale(0.7) for line in question_one_example_two_eqns])
+        for text in question_one_example_two_objects:
+            text.set_opacity(0) 
+        question_one_example_two_final = Text("Rejected", font_size=30, color=RED).move_to(DOWN*0.25 + RIGHT*3.5)
         #question one ends
 
 
@@ -159,11 +183,37 @@ class Question_one(Scene):
             Text("δ(q2, a) = q2", font_size=30).move_to(DOWN*1.8 + RIGHT * 3.5),
             Text("δ(q2, b) = q2", font_size=30).move_to(DOWN*2.5 + RIGHT * 3.5)
         ]
-
         question_two_objects = VGroup(*[line.scale(0.7) for line in question_two_equations])
         for text in question_two_objects:
+           text.set_opacity(0) 
+        question_two_final_objects = VGroup(question_two_objects, question_two_function)
+
+        question_two_example_one = Text("Trial String: babaaa", font_size=30).move_to(UP*2 + RIGHT*3.5)
+        question_two_example_one_eqns = [
+            Text("δ(q0, b) = q1", font_size=30).move_to(UP*1 + RIGHT * 3.5),
+            Text("δ(q1, a) = q0", font_size=30).move_to(UP*0.3 + RIGHT * 3.5),
+            Text("δ(q0, b) = q1", font_size=30).move_to(DOWN*0.4 + RIGHT * 3.5),
+            Text("δ(q1, a) = q0", font_size=30).move_to(DOWN*1.1 + RIGHT * 3.5),
+            Text("δ(q0, a) = q0", font_size=30).move_to(DOWN*1.8 + RIGHT * 3.5),
+            Text("δ(q0, a) = q0", font_size=30).move_to(DOWN*2.5 + RIGHT * 3.5)
+        ]
+        question_two_example_one_objects = VGroup(*[line.scale(0.7) for line in question_two_example_one_eqns])
+        for text in question_two_example_one_objects:
             text.set_opacity(0) 
+        question_two_example_one_final = Text("Accepted", font_size=30, color=GREEN).move_to(DOWN*3 + RIGHT*3.5)
+
+        question_two_example_two = Text("Trial String: babb", font_size=30).move_to(UP*2 + RIGHT*3.5)
+        question_two_example_two_eqns = [
+            Text("δ(q0, b) = q1", font_size=30).move_to(UP*1 + RIGHT * 3.5),
+            Text("δ(q1, a) = q0", font_size=30).move_to(UP*0.3 + RIGHT * 3.5),
+            Text("δ(q0, b) = q1", font_size=30).move_to(DOWN*0.4 + RIGHT * 3.5),
+            Text("δ(q1, b) = q2", font_size=30).move_to(DOWN*1.1 + RIGHT * 3.5),
+        ]
+        question_two_example_two_objects = VGroup(*[line.scale(0.7) for line in question_two_example_two_eqns])
+        for text in question_two_example_two_objects:
+            text.set_opacity(0)
         # question two ends
+        question_two_example_two_final = Text("Rejected", font_size=30, color=RED).move_to(DOWN*2 + RIGHT*3.5)
 
         final_text = Text("Thank You", font_size=40)
         names = Text("Varshith Pilli", font_size=30)
@@ -232,12 +282,34 @@ class Question_one(Scene):
         self.wait(1)
 
         self.play(
-            FadeOut(question_one_dashed_border),
             FadeOut(question_one_complete),
-            FadeOut(table),
+            FadeOut(table)
+        )
+        self.play(question_one_final_objects.animate.shift(LEFT*7), FadeIn(question_one_example_one))
+
+        for text in question_one_example_one_objects:
+            text.set_opacity(1) 
+            self.play(Write(text))
+            self.wait(0.25)
+        self.play(FadeIn(question_one_example_one_final))
+
+        self.play(FadeOut(question_one_example_one_objects), FadeOut(question_one_example_one), FadeOut(question_one_example_one_final))
+
+        self.play(FadeIn(question_one_example_two))
+        for text in question_one_example_two_objects:
+            text.set_opacity(1) 
+            self.play(Write(text))
+            self.wait(0.25)
+        self.play(FadeIn(question_one_example_two_final))
+
+        self.play(
+            FadeOut(question_one_dashed_border),
             FadeOut(question_one_text),
             FadeOut(question_one_function),
-            *[FadeOut(text) for text in question_one_objects]
+            *[FadeOut(text) for text in question_one_objects],
+            FadeOut(question_one_example_two_final),
+            FadeOut(question_one_example_two),
+            *[FadeOut(text) for text in question_one_example_two_objects]
         )
 
         self.wait(2)
@@ -313,11 +385,34 @@ class Question_one(Scene):
         self.wait(1)
 
         self.play(
-            FadeOut(question_two_dashed_border),
             FadeOut(question_two_complete),
-            FadeOut(table_2),
+            FadeOut(table_2)
+        )
+
+        self.play(question_two_final_objects.animate.shift(LEFT*7), FadeIn(question_two_example_one))
+
+        for text in question_two_example_one_objects:
+            text.set_opacity(1) 
+            self.play(Write(text))
+            self.wait(0.25)
+        self.play(FadeIn(question_two_example_one_final))
+
+        self.play(FadeOut(question_two_example_one_objects), FadeOut(question_two_example_one), FadeOut(question_two_example_one_final))
+
+        self.play(FadeIn(question_two_example_two))
+        for text in question_two_example_two_objects:
+            text.set_opacity(1) 
+            self.play(Write(text))
+            self.wait(0.25)
+        self.play(FadeIn(question_two_example_two_final))
+
+        self.play(
+            FadeOut(question_two_dashed_border),
             FadeOut(question_two_text),
             FadeOut(question_two_function),
+            *[FadeOut(text) for text in question_two_example_two_objects],
+            FadeOut(question_two_example_two),
+            FadeOut(question_two_example_two_final),
             *[FadeOut(text) for text in question_two_objects]
         )
 
